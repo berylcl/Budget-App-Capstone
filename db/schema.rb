@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_10_130453) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_10_130254) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,8 +19,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_10_130453) do
     t.string "icon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
   create_table "expense_categories", force: :cascade do |t|
@@ -47,7 +45,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_10_130453) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "categories", "users", on_delete: :cascade
   add_foreign_key "expense_categories", "categories"
   add_foreign_key "expense_categories", "expenses"
   add_foreign_key "expenses", "users", on_delete: :cascade
