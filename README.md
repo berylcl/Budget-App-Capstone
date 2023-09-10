@@ -1,6 +1,4 @@
 # Budget App
- 📗 Table of Contents
-
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Budget APp ](#-blog-app-)
   - [🛠 Built With ](#-built-with-)
