@@ -1,16 +1,18 @@
-<h2>Resend confirmation instructions</h2>
+<div class="container">
+  <div>
+    <%= link_to "🔙 Back", user_category_index_path(current_user), class: "back-btn-new btn btn-sm" %><br/>
+  </div><br/>
+  <%= form_with model: Category, url: user_category_index_path(current_user.id), data: { turbo: false } do |f| %>
+    <div class="field form-group" >
+      <%= f.text_field :name, class: "form-control", autofocus: true, placeholder: "Category name", id: "user_name", value: '' %><br/>
+    </div>
 
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="field form-group" >
+      <%= f.text_field :icon, class: "form-control", placeholder: "Category Icon", id: "user_icon" %><br/>
+    </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+    <div class="actions d-flex justify-content-center">
+      <%= f.submit "Add Category", class: 'btn add-cat' %>
+    </div>
+  <% end %>
+</div>
