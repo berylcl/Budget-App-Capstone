@@ -189,3 +189,51 @@ a.back-btn-new {
   background-color: #f5f6f8;
   color: #3778c2;
 }
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .logo {
+    margin-top: 10vh;
+  }
+
+  .btn-login,
+  .btn-signup,
+  .btn-logs {
+    width: 100%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .navbar_2 {
+    padding: 10px 0;
+  }
+
+  .category-div {
+    height: auto;
+    padding: 10px;
+  }
+
+  .headings {
+    font-size: 18px;
+  }
+
+  .budget-app {
+    font-size: 18px;
+  }
+
+  .time {
+    font-size: 12px;
+  }
+
+  .btn-login-small,
+  .btn-hover,
+  .alert-style {
+    margin: 8px 0;
+    padding: 6px;
+    font-size: 12px;
+  }
+}
