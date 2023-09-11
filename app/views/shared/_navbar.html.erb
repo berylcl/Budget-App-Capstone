@@ -1,0 +1,47 @@
+<nav >
+  <div >
+    <%# <p class= "finapp">FinApp</p> %>
+
+    <button  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span ></span>
+    </button>
+    <div id="navbarSupportedContent" >
+      <ul >
+        <% if user_signed_in? %>
+          <li >
+            <%= link_to current_user.name, user_category_index_path(current_user), class: "nav-link" %>
+          </li>
+          <li >
+            <%= link_to 'Create category', new_user_category_path(current_user), class: "nav-link" %>
+          </li>
+          </li>
+          <li >
+            <%= link_to 'Edit Profile', edit_user_registration_path, class: "nav-link" %>
+          </li>
+          <li>
+            <%= button_to 'Log Out', destroy_user_session_path, :method => :delete, class: "btn btn-link nav-link" %>
+          </li>
+        <% else %>
+          <li>
+            <p>Log in</p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div>
+      <% if !user_signed_in?%>
+        <p></p>
+      <% elsif request.fullpath == new_expense_path({category_id: params[:category_id]})%>
+        <P >Add new expense</P>
+      <% elsif request.fullpath == expense_index_path%>
+        <P>Expense page</P>
+      <% elsif request.fullpath == user_category_index_path(current_user) %>
+        <p >Categories</p>
+      <% elsif request.fullpath == new_user_category_path(current_user) %>
+        <p >Add a new Category</p>
+      <% elsif user_signed_in? || request.fullpath == user_category_path(current_user, @category.id) %>
+        <p >Details</p>
+      <% end %>
+    </div>
+  </div>
+</nav>

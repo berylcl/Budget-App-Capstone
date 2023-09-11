@@ -1,0 +1,28 @@
+<h1>Expense#index</h1>
+<p>Find me in app/views/expense/index.html.erb</p>
+<div class="container">
+  <div>
+    <%= link_to "🔙 Back", user_category_index_path(current_user) %><br/>
+    <p><strong><%= @category.name %> Category</strong></p>
+  </div>
+
+  <div>
+    <div>
+      <p>You have spent <strong><%= number_to_currency(@category.sum_amount, unit: "₦") %></strong> so far</p>
+    </div>
+  </div><br>
+
+  <% @expenses.each do |expense| %>
+    <div class="card mb-4">
+      <div >
+        <h5 > <%= expense.name.capitalize %> </h5>
+        <p ><%= expense.created_at.strftime('%a %d %b, %Y') %></p>
+        <h5> <%= number_to_currency(expense.amount, unit: "₦") %> </h5>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div>
+  <%= link_to 'Add new Expense', new_expense_path(category_id: @category.id), class: "btn new-category" %>
+</div>
