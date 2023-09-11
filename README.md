@@ -3,6 +3,8 @@
 - [📖 Budget APp ](#-blog-app-)
   - [🛠 Built With ](#-built-with-)
   - [💻 Getting Started ](#-getting-started-)
+    - [📹 Video Description](#video-description)
+    - [🚀 Live Demo](#live-demo)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Run tests](#run-tests)
@@ -30,7 +32,17 @@
 
 ## Getting Started
 To get a local copy of the program running, follow these simple steps
+## 📹 Video Description <a name="video-description"></a>
 
+- [Watch me explaining some of the app features](https://www.loom.com/share/d52de8af1cb14570880398daa0733fb3).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Experince a live demo](https://crypto-insights-2jwg6n9zg-berylcl.vercel.app/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
 - IDE, preferably Visual Studio Code
