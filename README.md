@@ -40,7 +40,7 @@ To get a local copy of the program running, follow these simple steps
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Experince a live demo](https://crypto-insights-2jwg6n9zg-berylcl.vercel.app/).
+- [Experince a live demo](https://makena.onrender.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
