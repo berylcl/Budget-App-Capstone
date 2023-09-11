@@ -11,10 +11,11 @@
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
+<!-- PROJECT DESCRIPTION -->
 
-> Project Description
+# 📖 BUDGET TRACKER <a name="about-project"></a>
 
-> "Budget App" is a mobile web application that gives users the power to manage their budget: users can have a list of expenses (e.g bed) associated with a broader category(Home) so that they can know how much they spent on what.
+> "Budget Tracker" is a mobile web application that gives users the power to manage their budget: users can have a list of expenses (e.g bed) associated with a broader category(Home) so that they can know how much they spent on what.
 
 ## Built With
 - Ruby
