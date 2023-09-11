@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Expense, type: :model do
   before(:all) do
-    @user = User.create(name: 'John', email: 'john@gmail.com', password: '123456')
-    @expense = @user.expenses.create(name: 'Rent', amount: 1000)
+    @user = User.create(name: 'Bushra', email: 'bushra@gmail.com', password: 'Melvin1')
+    @expense = @user.expenses.create(name: 'Rent', amount: 500_000)
   end
 
   it 'is valid with valid attributes' do
