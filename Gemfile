@@ -79,8 +79,8 @@ gem 'cancancan'
 gem 'devise', '~> 4.9'
 
 gem 'faker'
+gem 'rspec-support', '3.12.1'
 
-gem 'rspec-support', '3.11.1'
 gem 'will_paginate'
 
 gem 'shoulda-matchers', '~> 4.0'
