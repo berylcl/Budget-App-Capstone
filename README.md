@@ -34,7 +34,7 @@
 To get a local copy of the program running, follow these simple steps
 ## 📹 Video Description <a name="video-description"></a>
 
-- [Watch me explaining some of the app features](https://www.loom.com/share/d52de8af1cb14570880398daa0733fb3).
+- [Watch me explaining some of the app features](https://www.loom.com/share/233630535c3e4989b6cbcacdc390c9a8).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
