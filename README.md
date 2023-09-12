@@ -17,7 +17,7 @@
 
 # 📖 BUDGET TRACKER <a name="about-project"></a>
 
-> "Budget Tracker" is a mobile web application that gives users the power to manage their budget: users can have a list of expenses (e.g bed) associated with a broader category(Home) so that they can know how much they spent on what.
+> "Budget App" is a mobile web application that gives users the power to manage their budget: users can have a list of expenses (e.g bed) associated with a broader category(Home) so that they can know how much they spent on what.
 
 ## Built With
 - Ruby
