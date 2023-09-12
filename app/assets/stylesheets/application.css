@@ -189,6 +189,7 @@ a.back-btn-new {
   background-color: #f5f6f8;
   color: #3778c2;
 }
+
 @media (max-width: 768px) {
   body {
     width: 99%;
@@ -228,20 +229,23 @@ a.back-btn-new {
   .time {
     font-size: 12px;
   }
+
   form {
     padding: 3%;
   }
+
   .edit {
     padding-left: 3%;
   }
+
   h2 {
     padding-left: 3%;
   }
+
   .btn-login-small,
   .btn-hover,
   .alert-style {
     margin: 8px 0;
-
     font-size: 12px;
   }
 }
